@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+</head>
+<body> 
+    <div class="container">
+        <div class="heading">
+            <ul>
+                <li><img id="logo" src="images/myntra logo.png" alt="" height="40" style="margin-left: -45px;"></li>
+                <li><a href="https://www.myntra.com/shop/men">MEN</a></li>
+                <li><a href="https://www.myntra.com/shop/women">WOMEN</a></li>
+                <li><a href="https://www.myntra.com/shop/kids">KIDS</a></li>
+                <li><a href="https://www.myntra.com/shop/home-living" id="living">LIVING</a></li>
+                <li><a href="https://www.myntra.com/personal-care">BEAUTY</a></li>
+                <li><a href="https://www.myntra.com/studio/home">STUDIO  </a><b class="font">New</b></li>
+                <li><input type="search" placeholder="      Search for product, brand and more"></li>
+    
+                <li class="new"><a href="" class="buttons"><img src="images/profile.png" alt="">Profile</a></li>
+                <li><a href="" class="buttons"><img src="images/wishlist.png" alt="">Wishlist</a></li>
+                <li><a href="" class="buttons" ><img src="images/bag.png" class="i1">'''Bag'''</a></li>
+                
+            </ul>
+        </div>
+
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><a href="https://www.myntra.com/fusion-wear?f=Categories%3AKurta%20Sets%2CKurtas&rf=Discount%20Range%3A60.0_100.0_60.0%20TO%20100.0"><img src="images/1.jpg" alt="" class="displayimages"></a></div>
+                <div class="swiper-slide"><a href="https://www.myntra.com/womens-western-wear?f=Categories%3ADresses&rf=Discount%20Range%3A50.0_100.0_50.0%20TO%20100.0"><img src="images/2.webp" alt="" class="displayimages"></a></div>
+                <div class="swiper-slide"><a href="https://www.myntra.com/myntra-fashion-store?f=Brand%3AAllen%20Solly%2CArrow%2CBlackberrys%2CColorPlus%2CDENNISON%2CExcalibur%2CHancock%2CINVICTUS%2CJAINISH%2CLouis%20Philippe%2CLouis%20Philippe%20Ath.Work%2CMarks%20%26%20Spencer%2CPark%20Avenue%2CPeter%20England%2CPeter%20England%20Elite%2CRaymond%2CTHE%20BEAR%20HOUSE%2CV%20Dot%2CVan%20Heusen%3A%3ACategories%3AShirts%2CShorts%2CTrousers%2CTshirts%3A%3AGender%3Amen%2Cmen%20women&rf=Discount%20Range%3A40.0_100.0_40.0%20TO%20100.0"><img src="images/3.webp" alt="" class="displayimages"></a></div>
+                <div class="swiper-slide"><a href="https://www.myntra.com/sportscategory?f=Categories%3ACasual%20Shoes%2CSports%20Shoes%3A%3AGender%3Amen%2Cmen%20women"><img src="images/4.webp" alt="" class="displayimages"></a></div>
+                <div class="swiper-slide"><a href="https://www.myntra.com/fusion-wear?f=Categories%3AKurta%20Sets&rf=Discount%20Range%3A50.0_100.0_50.0%20TO%20100.0"><img src="images/5.webp" alt="" class="displayimages"></a></div>
+                <div class="swiper-slide"><a href="https://www.myntra.com/watch?f=Brand%3AArmani%20Exchange%2CEmporio%20Armani%2CFossil%2CMichael%20Kors%2CTommy%20Hilfiger%3A%3ACategories%3AWatch%20Gift%20Set%2CWatches%3A%3AGender%3Amen%20women%2Cwomen"><img src="images/6.webp" alt="" class="displayimages"></a></div>
+                <div class="swiper-slide"><a href="https://www.myntra.com/mens-sports-apparel?rf=Discount%20Range%3A40.0_100.0_40.0%20TO%20100.0"><img src="images/7.webp" alt="" class="displayimages"></a></div>
+                <div class="swiper-slide"><a href="https://www.myntra.com/men-innerwear?f=Categories%3ABoxers%2CBriefs%2CInnerwear%20Vests%2CLounge%20Pants%2CLounge%20Shorts%2CLounge%20Tshirts%2CNight%20suits%2CPyjamas%2CTrunk&rf=Price%3A131.0_500.0_131.0%20TO%20500.0"><img src="images/8.webp" alt="" class="displayimages"></a></div>
+                <div class="swiper-slide"><a href="https://www.myntra.com/ninja2plus"><img src="images/9.webp" alt="" class="displayimages"></a></div>
+                <div class="swiper-slide"><a href="https://www.myntra.com/handbags-and-bags?f=Categories%3AHandbags%2CWallets&rf=Discount%20Range%3A40.0_100.0_40.0%20TO%20100.0"><img src="images/10.webp" alt="" class="displayimages"></a></div></div>
+            
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>      
+            </div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    
+    <script>
+        const swiper = new Swiper('.swiper', {
+
+        autoplay: {
+            delay : 6000,
+        },
+        // Optional parameters
+        loop: true,
+              
+        // If we need pagination
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+    
+        // Navigation arrows
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+        });
+    </script>
+</body>
+</html>
